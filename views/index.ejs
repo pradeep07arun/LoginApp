@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+    
+  </head>
+  <body>
+  	<div id="loginSection">
+    	<h1><%= title %></h1>
+	    <form id="loginForm"> 
+			<h1>Log in</h1> 
+			<p> 
+				<label for="username" class="uname" data-icon="u" > Email</label>
+				<input id="username" name="username" required="required" type="text" placeholder="mymail@mail.com"/>
+			</p>
+			<p> 
+				<label for="password" class="youpasswd" data-icon="p"> Your password </label>
+				<input id="password" name="password" required="required" type="password" placeholder="Password" /> 
+			</p>
+			<p class="login button"> 
+				<input type="submit" value="Login" /> 
+			</p>
+			<p class="change_link">
+				Not a member yet ?
+				<span onClick="toggleLogin()">Join us</span>
+			</p>
+		</form>
+	</div>
+	<div id="regSection">
+    	<h1><%= titleReg %></h1>
+	    <form id="regForm"> 
+			<h1>Register</h1> 
+			<p> 
+				<label for="firstname" class="fname" data-icon="u" > First Name</label>
+				<input id="firstname" name="firstname" required="required" type="text" placeholder="First Name"/>
+			</p>
+			<p> 
+				<label for="lastname" class="lname" data-icon="u" > Last Name</label>
+				<input id="lastname" name="lastname" required="required" type="text" placeholder="Last Name"/>
+			</p>
+			<p> 
+				<label for="username" class="uname" data-icon="u" > Email</label>
+				<input id="rusername" name="rusername" required="required" type="text" placeholder="mymail@mail.com"/>
+			</p>
+			<p> 
+				<label for="password" class="youpasswd" data-icon="p"> Your password </label>
+				<input id="rpassword" name="rpassword" required="required" type="password" placeholder="Password" /> 
+			</p>
+
+			<p class="login button"> 
+				<input type="submit" value="Register" /> 
+			</p>
+			<p class="change_link">
+				Already a Member ?
+				<span onClick="toggleLogin()">Login</span>
+				
+			</p>
+		</form>
+	</div>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script type="text/javascript" src="/javascripts/auth.js"></script>
+    <script type="text/javascript" src="/javascripts/scripts.js"></script>
+
+  </body>
+</html>
